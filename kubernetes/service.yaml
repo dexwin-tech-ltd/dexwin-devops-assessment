@@ -5,8 +5,8 @@ metadata:
   namespace: assessment
 spec:
   selector:
-    app: customer-service
+    app: customer-api
   ports:
     - name: http
       port: 80
-      targetPort: 8081
+      targetPort: 8080
