@@ -2,7 +2,7 @@
 set -euo pipefail
 
 namespace="assessment"
-local_port="18080"
+local_port="8080"
 
 for command in kubectl curl; do
   if ! command -v "${command}" >/dev/null 2>&1; then

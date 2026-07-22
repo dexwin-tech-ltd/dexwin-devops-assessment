@@ -1,7 +1,7 @@
 const http = require('node:http');
 
 const port = Number.parseInt(process.env.PORT ?? '8080', 10);
-const startupDelayMs = Number.parseInt(process.env.STARTUP_DELAY_MS ?? '15000', 10);
+const startupDelayMs = Number.parseInt(process.env.STARTUP_DELAY_MS ?? '20000', 10);
 const startedAt = Date.now();
 
 function isHealthy(now = Date.now()) {

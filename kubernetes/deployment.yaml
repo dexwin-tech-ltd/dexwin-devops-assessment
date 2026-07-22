@@ -25,14 +25,15 @@ spec:
               containerPort: 8080
           readinessProbe:
             httpGet:
-              path: /ready
-              port: http
+              path: /readyz
+              port: 8080
+            initialDelaySeconds: 10  
             periodSeconds: 3
-            failureThreshold: 2
+            failureThreshold: 3
           livenessProbe:
             httpGet:
               path: /healthz
-              port: http
-            initialDelaySeconds: 2
-            periodSeconds: 2
+              port: 8080
+            initialDelaySeconds: 10
+            periodSeconds: 3
             failureThreshold: 3
