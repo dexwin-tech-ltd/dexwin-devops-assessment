@@ -1,7 +1,6 @@
 name: Assessment environment smoke test
 
 on:
-  pull_request:
   push:
     branches:
       - main
