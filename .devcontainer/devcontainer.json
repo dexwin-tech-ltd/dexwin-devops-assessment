@@ -19,5 +19,5 @@
     "storage": "32gb"
   },
   "remoteUser": "vscode",
-  "waitFor": "updateContentCommand"
+  "postStartCommand": "bash .devcontainer/start-autosave.sh"
 }
